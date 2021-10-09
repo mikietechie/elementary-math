@@ -12,6 +12,7 @@ class Application(object):
     def setup(self):
         self.addition_frame = tkinter.Frame(self.root)
         self.addition_frame.place(relx=0,rely=0, relwidth=1, relheight=1)
+        self.numbers_ = ""
         self.number_1 = tkinter.IntVar()
         self.number_2 = tkinter.IntVar(value=random.randint(0, 20))
         self.set_number_1()
